@@ -15,7 +15,7 @@ router.get("/phones", (req, res, next) => {
     });
 });
 
-router.get("/phones/:id", (req, res, next) => {
+router.get("/phones/:phoneId", (req, res, next) => {
   const { phoneId } = req.params;
 
   if (!mongoose.Types.ObjectId.isValid(phoneId)) {
